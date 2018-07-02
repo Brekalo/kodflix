@@ -18,25 +18,30 @@
   font-size: 6em;
 }
 
-.App-subtitle {
-  font-size: 30px; 
+.App-body {
+  font-size: 2.5em;
+}
+
+.Cover-subtitle {
+  font-size: 40px; 
   flex: 1
 }
 
 .container {
   display: flex;
   justify-content: space-evenly;
+  flex: 1;
 }
 
-.App-body {
-  font-size: 2em;
+.AAMM {
+  width: 80%;
 }
+
+.Cover-image {
+  margin: auto;
+  }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
-
-.AAMM {
-  width: 50%;
 }
