@@ -18,6 +18,16 @@
   font-size: 6em;
 }
 
+.App-subtitle {
+  font-size: 30px; 
+  flex: 1
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .App-body {
   font-size: 2em;
 }
