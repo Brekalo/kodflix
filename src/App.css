@@ -22,14 +22,21 @@
   font-size: 2.5em;
 }
 
-.Cover-subtitle {
-  font-size: 40px; 
-  flex: 1;
+.Cover-subtitle-overlay {
+  font-size: 40px;
+  text-align: center;
+  bottom: 0;
+  color: rgb(192, 182, 93);
+  position: absolute;
+  background-color: black;
+  padding: 40px;
 }
 
 .container {
   display: flex;
   justify-content: space-evenly;
+  position: relative;
+  flex-basis: 100%;
 }
 
 .AAMM {
@@ -37,13 +44,12 @@
 }
 
 .Cover-image {
-  margin: auto;
   flex: 1;
   flex-basis: 100%;
   }
 
   img {
-    height: 100%;
+    height: auto;
     width: 100%;
   }
 

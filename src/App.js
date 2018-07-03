@@ -23,24 +23,30 @@ class App extends Component {
             </p>
             <div className="container">
                 <div className="Cover-image">
-                    <img src={BlackMirror}  alt='' />
+                    <h2 className="Cover-subtitle-overlay">Black Mirror</h2>
+                    <img src={BlackMirror}  alt='Black Mirror' />
                     </div>
                 <div className="Cover-image">
-                    <img src={BreakingBad} alt='' />
+                    <h2 className="Cover-subtitle-overlay">Breaking Bad</h2>
+                    <img src={BreakingBad} alt='Breaking Bad' />
                     </div>
                 <div className="Cover-image">
-                    <img src={DeathNote} alt='' />
+                    <h2 className="Cover-subtitle-overlay">Death Note</h2>
+                    <img src={DeathNote} alt='Death Note' />
                     </div>
             </div>
             <div className="container">
                 <div className="Cover-image">
-                    <img src={GameOfThrones} alt='' />
+                    <h2 className="Cover-subtitle-overlay">Game of Thrones</h2>
+                    <img src={GameOfThrones} alt='Game of Thrones' />
                     </div>
                 <div className="Cover-image">
-                    <img src={TheWalkingDead} alt='' />
+                    <h2 className="Cover-subtitle-overlay">The Walking Dead</h2>
+                    <img src={TheWalkingDead} alt='The Walking Dead' />
                     </div>
                 <div className="Cover-image">
-                    <img src={TheWire} alt='' />
+                    <h2 className="Cover-subtitle-overlay">The Wire</h2>
+                    <img src={TheWire} alt='The Wire' />
                     </div>
             </div>
       </div>
