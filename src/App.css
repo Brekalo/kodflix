@@ -24,13 +24,12 @@
 
 .Cover-subtitle {
   font-size: 40px; 
-  flex: 1
+  flex: 1;
 }
 
 .container {
   display: flex;
   justify-content: space-evenly;
-  flex: 1;
 }
 
 .AAMM {
@@ -38,10 +37,9 @@
 }
 
 .Cover-image {
-  margin: auto;
+  flex: 1;
   }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  img {
+    width: 100%;
+  }
