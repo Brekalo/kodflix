@@ -22,35 +22,44 @@
   font-size: 2.5em;
 }
 
-.Cover-subtitle-overlay {
-  font-size: 40px;
-  text-align: center;
-  bottom: 0;
-  color: rgb(192, 182, 93);
-  position: absolute;
-  background-color: black;
-  padding: 40px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  flex-basis: 100%;
-}
-
 .AAMM {
   width: 80%;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Title {
+  font-size: 30px;
+  color: rgb(192, 182, 93);
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
 .Cover-image {
-  flex: 1;
-  flex-basis: 100%;
+  flex-grow: 1;
+  margin: auto;
+  position: relative;
   }
 
-  img {
+  /* img {
     height: auto;
     width: 100%;
+  }  */
+
+  .Slika {
+    width: 100%;
+  }
+
+  .Cover-image:hover .Title {
+    opacity: 1;
+    height: 15%;
   }
 
   @media only screen and (max-width: 600px) {

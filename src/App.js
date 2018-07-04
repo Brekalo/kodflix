@@ -23,31 +23,36 @@ class App extends Component {
             </p>
             <div className="container">
                 <div className="Cover-image">
-                    <h2 className="Cover-subtitle-overlay">Black Mirror</h2>
-                    <img src={BlackMirror}  alt='Black Mirror' />
-                    </div>
+                    <img src={BlackMirror}  className='Slika' alt='Black Mirror' />
+                    <div className="Title"><h2>Black Mirror</h2></div>
+                </div>
+
                 <div className="Cover-image">
-                    <h2 className="Cover-subtitle-overlay">Breaking Bad</h2>
-                    <img src={BreakingBad} alt='Breaking Bad' />
-                    </div>
+                    <img src={BreakingBad} className='Slika' alt='Breaking Bad' />
+                    <div className="Title"><h2>Breaking Bad</h2></div>
+                </div>
+
                 <div className="Cover-image">
-                    <h2 className="Cover-subtitle-overlay">Death Note</h2>
-                    <img src={DeathNote} alt='Death Note' />
-                    </div>
+                    <img src={DeathNote} className='Slika' alt='Death Note' />
+                    <div className="Title"><h2>Death Note</h2></div>
+                </div>
+                
             </div>
             <div className="container">
                 <div className="Cover-image">
-                    <h2 className="Cover-subtitle-overlay">Game of Thrones</h2>
-                    <img src={GameOfThrones} alt='Game of Thrones' />
-                    </div>
+                    <img src={GameOfThrones} className='Slika' alt='Game of Thrones' />
+                    <div className="Title"><h2>Game of Thrones</h2></div>
+                </div>
+
                 <div className="Cover-image">
-                    <h2 className="Cover-subtitle-overlay">The Walking Dead</h2>
-                    <img src={TheWalkingDead} alt='The Walking Dead' />
-                    </div>
+                    <img src={TheWalkingDead} className='Slika' alt='The Walking Dead' />
+                    <div className="Title"><h2>The Walking Dead</h2></div>
+                </div>
+
                 <div className="Cover-image">
-                    <h2 className="Cover-subtitle-overlay">The Wire</h2>
-                    <img src={TheWire} alt='The Wire' />
-                    </div>
+                    <img src={TheWire} className='Slika' alt='The Wire' />
+                    <div className="Title"><h2>The Wire</h2></div>
+                </div>
             </div>
       </div>
     );
