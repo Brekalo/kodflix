@@ -32,20 +32,22 @@
 }
 
 .Title {
+  transition: bottom 6s;
   font-size: 30px;
   color: rgb(192, 182, 93);
   background-color: black;
   position: absolute;
   width: 100%;
-  bottom: 0;
-  opacity: 0;
+  bottom: -100px;
   z-index: 1;
+  height: 15%;
 }
 
 .Cover-image {
   flex-grow: 1;
   margin: auto;
   position: relative;
+  overflow: hidden;
   }
 
   /* img {
@@ -58,8 +60,7 @@
   }
 
   .Cover-image:hover .Title {
-    opacity: 1;
-    height: 15%;
+    bottom: 0;
   }
 
   @media only screen and (max-width: 600px) {
