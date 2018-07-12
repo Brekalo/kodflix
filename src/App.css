@@ -1,74 +1,43 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 6em;
-}
-
-.App-body {
-  font-size: 2.5em;
-}
-
-.AAMM {
-  width: 80%;
-}
-
-.container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.Title {
-  transition: bottom 6s;
-  font-size: 30px;
-  color: rgb(192, 182, 93);
-  background-color: black;
-  position: absolute;
   width: 100%;
-  bottom: -100px;
-  z-index: 1;
-  height: 15%;
+}
+  
+.coverContainer {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.Cover-image {
+.coverImage {
   flex-grow: 1;
-  margin: auto;
   position: relative;
   overflow: hidden;
   }
 
-  /* img {
-    height: auto;
-    width: 100%;
-  }  */
-
-  .Slika {
-    width: 100%;
+.coverImage:hover .coverTitle {
+  bottom: 0;
   }
 
-  .Cover-image:hover .Title {
-    bottom: 0;
+.cover {
+  width: 100%;
   }
 
-  @media only screen and (max-width: 600px) {
-    body {
+.coverTitle {
+  color: rgb(192, 182, 93);
+  background-color: rgb(2, 2, 0);
+  position: absolute;
+  transition: bottom 3s ease;
+  opacity: 0.8;
+  width: 100%;
+  bottom: -210px;
+  height: 15%;
+  }
+
+@media only screen and (max-width: 600px) {
+  body {
         background-color: rgb(192, 182, 93);
-    }
-
-    .container {
-      display: block;
-    }
+      }
+       .coverContainer {
+        display: block;
+      }
 }
