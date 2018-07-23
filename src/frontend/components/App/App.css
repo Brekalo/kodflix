@@ -1,0 +1,18 @@
+.App {
+  width: 100%;
+  text-align: center;
+  }
+  
+.coverRow {
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+@media only screen and (max-width: 600px) {
+  body {
+        background-color: #C5B358;
+        }
+          .coverRow {
+            display: block;
+          }
+  }

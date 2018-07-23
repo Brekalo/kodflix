@@ -1,0 +1,19 @@
+#details {
+    background-color: rgba(197, 179, 88, 0.158);
+    height: 450px;
+    padding-top: 10px;
+    box-sizing: inherit;
+}
+
+.buttonBackHome {
+    background-color: rgba(14, 15, 22, 0.555);
+    display: inline;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.backHome {
+    color: white;
+    text-decoration: none;
+    font-size: 12px
+}

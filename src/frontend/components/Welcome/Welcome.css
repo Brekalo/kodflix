@@ -1,0 +1,22 @@
+.welcome {
+    background-color:  rgba(0, 6, 17);
+    height: 120px;
+    margin-bottom: 0;
+    padding: 50px 0px;
+  }
+
+  .welcomeTitle {
+    color: #C5B358;
+    letter-spacing: 3px;
+    font-weight: 320;
+  }
+
+  .welcomeLogo {
+    animation: welcomeLogo-spin infinite 15s linear;
+    height: 75px;
+  } 
+
+  @keyframes welcomeLogo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }

@@ -1,0 +1,25 @@
+.coverImage {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    }
+  
+  .coverImage:hover .coverTitle {
+    bottom: 0;
+    }
+  
+  .cover {
+    width: 100%;
+    }
+    
+  .coverTitle {
+    color: #C5B358;
+    letter-spacing: 1.5px;
+    background-color: rgba(0, 6, 17, 0.7);
+    position: absolute;
+    transition: bottom 1s ease;
+    width: 100%;
+    bottom: -130px;
+    height: 15%;
+    }
