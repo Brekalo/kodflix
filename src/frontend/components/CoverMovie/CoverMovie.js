@@ -12,14 +12,14 @@ class CoverMovie extends React.Component {
         return (
             <div>
                 <div className='coverRow'>
-                    <CoverGallery image={BlackMirror} Title='Black Mirror' id='Black-Miror'/>
-                    <CoverGallery image={BreakingBad} Title='Breaking Bad' id='Breaking-Bad'/>
-                    <CoverGallery image={DeathNote} Title='Death Note' id='Death-Note'/>  
+                    <CoverGallery image={BlackMirror} Title='Black Mirror' id='black-miror'/>
+                    <CoverGallery image={BreakingBad} Title='Breaking Bad' id='breaking-bad'/>
+                    <CoverGallery image={DeathNote} Title='Death Note' id='death-note'/>  
                 </div>
                 <div className='coverRow'>
-                    <CoverGallery image={GameOfThrones} Title='Game of Thrones' id='Game-Of-Thrones'/>
-                    <CoverGallery image={TheWalkingDead} Title='The Walking Dead' id='The-Walking-Dead'/>
-                    <CoverGallery image={TheWire} Title='The Wire' id='The-Wire'/>  
+                    <CoverGallery image={GameOfThrones} Title='Game of Thrones' id='game-of-thrones'/>
+                    <CoverGallery image={TheWalkingDead} Title='The Walking Dead' id='the-walking-dead'/>
+                    <CoverGallery image={TheWire} Title='The Wire' id='the-wire'/>  
                 </div>
             </div>
         )
