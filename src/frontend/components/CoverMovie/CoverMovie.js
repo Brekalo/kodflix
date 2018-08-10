@@ -15,8 +15,6 @@ class CoverMovie extends React.Component {
                     <CoverGallery image={BlackMirror} Title='Black Mirror' id='black-miror'/>
                     <CoverGallery image={BreakingBad} Title='Breaking Bad' id='breaking-bad'/>
                     <CoverGallery image={DeathNote} Title='Death Note' id='death-note'/>  
-                </div>
-                <div className='coverRow'>
                     <CoverGallery image={GameOfThrones} Title='Game of Thrones' id='game-of-thrones'/>
                     <CoverGallery image={TheWalkingDead} Title='The Walking Dead' id='the-walking-dead'/>
                     <CoverGallery image={TheWire} Title='The Wire' id='the-wire'/>  
