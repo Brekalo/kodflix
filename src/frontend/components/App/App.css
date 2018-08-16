@@ -9,6 +9,13 @@
   justify-content: space-evenly;
   }
 
+  .coverRow > * {
+    flex: 1;
+    flex-basis: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 600px) {
   body {
         background-color: #C5B358;

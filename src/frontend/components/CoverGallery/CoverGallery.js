@@ -3,14 +3,12 @@ import {Link} from 'react-router-dom';
 import './CoverGallery.css';
 
 
-class CoverGallery extends React.Component {
-    render() {
-        return (
-            <Link to={`/${this.props.id}`} className='coverImage'>
-                <img src={this.props.image} className='cover' alt='{this.props.Title}' />
-                <div className='coverTitle'><h1>{this.props.Title}</h1></div>
-            </Link>
-        )
-    }
+function CoverGallery (props) {
+    return (
+        <Link to={`/${props.id}`} className='coverImage'>
+            <img src={props.image} className='cover' alt={props.title} />
+            <div className='coverTitle'><h1>{props.title}</h1></div>
+        </Link>
+    )
 }
 export default CoverGallery;
