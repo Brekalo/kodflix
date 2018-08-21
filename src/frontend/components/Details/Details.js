@@ -21,11 +21,10 @@ class Details extends React.Component {
         return (
             <div id='details'>
               <h1>{this.state.message}</h1>
-              <button className='buttonBackHome' onClick={this.onNavigateHome}>
+              <button className='buttonBackHome'>
               <Link to={'/'} className='backHome'><h3>Home</h3></Link>
             </button>
             </div>
         );
-    }
 }
 export default Details; 
