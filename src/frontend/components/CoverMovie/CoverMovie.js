@@ -1,18 +1,18 @@
 import React from 'react';
 import CoverGallery from '../CoverGallery/CoverGallery';
-import getCoverMovie from './CoverMovie-get';
+import getShows from '../Shows/Shows';
 
 class CoverMovie extends React.Component {
     render(){
         return (
             <div className='coverRow'> {                    
-                getCoverMovie().map(coverImage => {
+                getShows().map(show => {
                     return (
                         <CoverGallery 
-                        title={coverImage.title}
-                        image={coverImage.image} 
-                        id={coverImage.id} 
-                        key={coverImage.id} />
+                        title={show.title}
+                        image={show.image} 
+                        id={show.id} 
+                        key={show.id} />
                         );
                     })
                 }
