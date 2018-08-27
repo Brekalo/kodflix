@@ -3,7 +3,8 @@ import CoverMovie from '../CoverMovie/CoverMovie';
 import Details from '../Details/Details.js';
 import './App.css';
 import Welcome from '../Welcome/Welcome';
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import NotFound from '../NotFound/NotFound';
 
 class App extends React.Component {
     render() {
@@ -11,8 +12,11 @@ class App extends React.Component {
            <Router> 
                 <div className='App'>
                 <Welcome />
+                <Switch >
                     <Route exact path='/' component={CoverMovie} />
                     <Route path='/:showId' component={Details} />
+                    <Route path='/notFound' component={NotFound} />
+                </Switch>
                 </div> 
             </Router>
         );
