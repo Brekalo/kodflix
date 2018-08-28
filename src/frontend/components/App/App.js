@@ -14,8 +14,8 @@ class App extends React.Component {
                 <Welcome />
                 <Switch >
                     <Route exact path='/' component={CoverMovie} />
-                    <Route path='/:showId' component={Details} />
                     <Route path='/notFound' component={NotFound} />
+                    <Route path='/:showId' component={Details} />
                 </Switch>
                 </div> 
             </Router>

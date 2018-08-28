@@ -18,18 +18,30 @@ class Details extends React.Component {
     }
 
     render() {
+        let show = this.state.show;
         return (
-            <div id='details'>
-                {this.state.show ?
-                    <div>
-                        <h1>{this.state.show.title}</h1>
-                        <button className='buttonBackHome'>
-                            <Link to={'/'} className='backHome'><h3>Home</h3></Link>
-                        </button>
-                    </div> :
-                    <Redirect to='/notFound' />}
-            </div>
-        );
+            this.state.show ?
+            <div className='details'>
+                    <div className='details-movie'>
+                        <h1>{show.title}</h1>
+                        <div className='details-movie-content'>
+                            <h3 className='details-movie-content-synopsis'>
+                                {show.synopsis}
+                            </h3>
+                            <div className='details-movie-content-cover'>
+                                <img src={show.image} alt=''/>
+                            </div>
+                        </div>
+                        <div className='btn'>
+                            <hr class="style1"></hr>
+                                <button className='btn-BackHome'>
+                                    <Link to={'/'} className='backHome'><h4>Home</h4></Link>
+                                </button>
+                        </div>
+                    </div>
+            </div> :
+            <Redirect to='/notFound' />
+        )
     }
 }
 export default Details; 

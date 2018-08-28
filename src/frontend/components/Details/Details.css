@@ -1,30 +1,95 @@
 #details {
-    background-color: rgba(197, 179, 88, 0.158);
+    background-color: rgba(14, 15, 22, 0.555);
     height: 450px;
     padding-top: 3%;
     box-sizing: inherit;
 }
 
-.buttonBackHome {
-    background-color: rgba(14, 15, 22, 0.555);
-    display: inline;
-    padding: 0px 20px;
+.details-movie-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.details-movie-content-synopsis {
+    padding-right: 30px;
+}   
+
+.details-movie-content-cover img {
+    max-width: 300px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .details-movie-content {
+        display: block;
+    }
+
+    .details-movie-content-cover img {
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+} 
+
+.details-movie h1 {
+    text-align: left;
+    color: #000;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 320;
+    font-size: 35px;
+    margin: 30px 0px 60px 30px;
+}
+
+.details-movie-content h3 {
+    text-align: left;
+    color: #000;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 30px;
+}
+
+.btn {
+    background-color: rgba(197, 179, 88, 0.048);
+    position: relative;
+    height: 100px;
+    bottom: 0;
+    box-sizing: inherit;
+    text-align: center;
+}
+
+.btn-BackHome {
+    display: inline-block;
     cursor: pointer;
-    margin: 3%;
+    background-color: transparent;
+    border: 1px solid  rgba(14, 15, 22, 0.555);
+    border-radius: 6px; 
+    padding: 12px 20px; 
+    width: 120px;
+    margin-top: 20px;
 }
 
 .backHome {
     font-size: 12px;
-    color: white;
-    border: 1px solid  #C5B358;
-    box-shadow: 0 0 8px 0 rgba(14, 15, 22, 0.886);
+    color: rgba(14, 15, 22, 0.555);
+    text-transform: uppercase;
     text-decoration: none;
 }
 
-.buttonBackHome:active {
+.backHome:hover {
     background-color: #C5B358;
-  }
+    }
+
+.btn-BackHome:active {
+    background-color: #C5B358;
+}
   
-.buttonBackHome, .buttonBackHome:focus {
+.btn-BackHome .btn-BackHome:focus {
     outline: 0;
-  }
+    }
+
+hr.style1 {
+    border-top: 1px solid rgba(14, 15, 22, 0.555);
+}

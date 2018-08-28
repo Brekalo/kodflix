@@ -1,28 +1,27 @@
 .coverImage {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    flex: 1 1 30%;
-    }
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 30%;
+}
   
-  .coverImage:hover .coverTitle {
-    bottom: 0;
-    }
+.coverImage:hover .coverTitle {
+  bottom: 0;
+}
   
-  .cover {
-    width: 100%;
-    }
+.cover {
+  width: 100%;
+}
     
-  .coverTitle {
-    color: #C5B358;
-    letter-spacing: 1.5px;
-    background-color: rgba(0, 6, 17, 0.7);
-    position: absolute;
-    transition: bottom 1s ease;
-    width: 100%;
-    bottom: -130px;
-    height: 15%;
-    /* box-sizing: border-box;
-    padding: 30px; */
-    }
+.coverTitle {
+  color: #C5B358;
+  letter-spacing: 1.5px;
+  background-color: rgba(0, 6, 17, 0.7);
+  position: absolute;
+  transition: bottom 1s ease;
+  width: 100%;
+  bottom: -130px;
+  height: 15%;
+  text-align: center;
+}

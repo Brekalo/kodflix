@@ -1,12 +1,10 @@
 import React from 'react';
 
-class NotFound extends React.Component() {
+function NotFound() {
 
-render() {
-    return (
-        <h1>Ooops, it looks like this page doesn't exist :(</h1>
+return (
+    <h1>Ooops, it looks like this page doesn't exist :(</h1>
     );
-    }
 }
 
 export default NotFound; 
