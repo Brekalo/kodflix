@@ -3,6 +3,17 @@ import CoverGallery from '../CoverGallery/CoverGallery';
 import getShows from '../Shows/Shows';
 
 class CoverMovie extends React.Component {
+    
+    componentDidMount() {
+        fetch('/rest/shows')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(myJson) {
+            console.log(myJson);
+            });
+    }
+    
     render(){
         return (
             <div className='coverRow'> {                    
@@ -17,7 +28,7 @@ class CoverMovie extends React.Component {
                     })
                 }
             </div>
-         );
-     }
- }
+        );
+    }
+}
 export default CoverMovie;

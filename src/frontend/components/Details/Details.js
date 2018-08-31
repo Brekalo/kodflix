@@ -29,7 +29,7 @@ class Details extends React.Component {
                                 {show.synopsis}
                             </h3>
                             <div className='details-movie-content-cover'>
-                                <img src={show.image} alt=''/>
+                                <img src={show.image} alt={show.title}/>
                             </div>
                         </div>
                         <div className='btn'>
