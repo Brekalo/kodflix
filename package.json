@@ -13,7 +13,8 @@
         "nodemon": "^1.18.6"
     },
     "scripts": {
-        "start": "npm-run-all -s build _start-backend",
+        "start": "npm run _start-backend",
+        "postinstall": "react-scripts build",
         "start-dev": "npm-run-all -p _start-frontend _start-backend",
         "_start-frontend": "react-scripts start",
         "_start-backend": "node src/backend/app.js",
