@@ -32,4 +32,5 @@ function getCoverMovie() {
         id: 'the-wire'
     }];
 }
+
 export default getCoverMovie;

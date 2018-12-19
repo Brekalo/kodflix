@@ -23,7 +23,7 @@
         "eject": "react-scripts eject"
     },
     "devDependencies": {
-
+        "eslint-plugin-react": "^7.11.1"
     },
     "proxy": "http://localhost:3001"
 }

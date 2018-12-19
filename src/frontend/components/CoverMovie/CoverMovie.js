@@ -1,27 +1,27 @@
 import React from 'react';
 import CoverGallery from '../CoverGallery/CoverGallery';
-import getShows from '../Shows/Shows';
+// import getShows from '../Shows/Shows';
 
 class CoverMovie extends React.Component {
+
+    constructor() {
+        super();
+        this.state = { shows: [] };
+    }
     
     componentDidMount() {
         fetch('/rest/shows')
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(myJson) {
-            console.log(myJson);
-            });
+            .then(response => response.json())
+            .then(shows => this.setState({ shows }));
     }
     
     render(){
         return (
             <div className='coverRow'> {                    
-                getShows().map(show => {
+                this.state.shows.map(show => {
                     return (
                         <CoverGallery 
                         title={show.title}
-                        image={show.image} 
                         id={show.id} 
                         key={show.id} />
                         );
@@ -31,4 +31,5 @@ class CoverMovie extends React.Component {
         );
     }
 }
+
 export default CoverMovie;
