@@ -1,10 +1,10 @@
 import React from 'react';
-import CoverMovie from '../CoverMovie/CoverMovie';
-import Details from '../Details/Details.js';
+import CoverMovie from '../coverMovie/CoverMovie';
+import Details from '../details/Details.js';
 import './App.css';
-import Welcome from '../Welcome/Welcome';
+import Welcome from '../welcome/Welcome';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NotFound from '../NotFound/NotFound';
+import NotFound from '../notFound/NotFound';
 
 class App extends React.Component {
     render() {

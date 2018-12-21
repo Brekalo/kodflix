@@ -1,6 +1,5 @@
 import React from 'react';
-import CoverGallery from '../CoverGallery/CoverGallery';
-// import getShows from '../Shows/Shows';
+import CoverGallery from '../coverGallery/CoverGallery';
 
 class CoverMovie extends React.Component {
 

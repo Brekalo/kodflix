@@ -9,7 +9,7 @@ class CoverGallery extends React.Component {
 
         return (
             <Link to={`/${id}`} className='coverImage'>
-                <img src={require(`../../images/${id}.jpg`)}
+                <img src={require(`../../common/images/${id}.jpg`)}
                     alt={title} />
                 <div className='coverTitle'>
                     <h1>{title}</h1>
