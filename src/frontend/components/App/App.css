@@ -1,27 +1,33 @@
-.body {
+/* .body {
   background-color: rgba(197, 179, 88, 0.048);
   color: white;
   min-height: 100%;
-}
-  
-.coverRow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+} */
+
+#root,
+.App,
+.App > * {
+    height: 100%;
 }
 
-.coverRow > * {
-  flex: 1;
-  flex-basis: 300px;
-  position: relative;
-  overflow: hidden;
+.coverRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.coverRow>* {
+    flex: 1;
+    flex-basis: 300px;
+    position: relative;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
     body {
-      background-color: rgba(197, 179, 88, 0.048);
+        background-color: rgba(197, 179, 88, 0.048);
     }
-        .coverRow {
-          display: block;
-        }
+    .coverRow {
+        display: block;
+    }
 }

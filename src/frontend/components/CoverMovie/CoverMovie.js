@@ -1,5 +1,6 @@
 import React from 'react';
 import CoverGallery from '../coverGallery/CoverGallery';
+import Loading from '../common/loading/Loading';
 
 class CoverMovie extends React.Component {
 
@@ -7,25 +8,24 @@ class CoverMovie extends React.Component {
         super();
         this.state = { shows: [] };
     }
-    
+
     componentDidMount() {
         fetch('/rest/shows')
             .then(response => response.json())
             .then(shows => this.setState({ shows }));
     }
-    
-    render(){
+
+    render() {
         return (
-            <div className='coverRow'> {                    
-                this.state.shows.map(show => {
-                    return (
-                        <CoverGallery 
-                        title={show.title}
-                        id={show.id} 
-                        key={show.id} />
+            <div className='coverRow'> {
+                this.state.shows.length ?
+                    this.state.shows.map(show => {
+                        return (
+                            <CoverGallery key={show.id} id={show.id} title={show.title} />
                         );
-                    })
-                }
+                    }) :
+                    <Loading />
+            }
             </div>
         );
     }

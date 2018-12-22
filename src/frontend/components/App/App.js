@@ -9,15 +9,15 @@ import NotFound from '../notFound/NotFound';
 class App extends React.Component {
     render() {
         return (
-           <Router> 
+            <Router>
                 <div className='App'>
-                <Welcome />
-                <Switch >
-                    <Route exact path='/' component={CoverMovie} />
-                    <Route path='/notFound' component={NotFound} />
-                    <Route path='/:showId' component={Details} />
-                </Switch>
-                </div> 
+                    <Welcome />
+                    <Switch >
+                        <Route exact path='/' component={CoverMovie} />
+                        <Route path='/notFound' component={NotFound} />
+                        <Route path='/:showId' component={Details} />
+                    </Switch>
+                </div>
             </Router>
         );
     }

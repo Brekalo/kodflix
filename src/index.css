@@ -1,6 +1,11 @@
-* {
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,sans-serif, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(197, 179, 88, 0.048);
+    color: white;
+    height: 100%;
+    overflow-y: auto;
 }
