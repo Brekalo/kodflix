@@ -1,12 +1,13 @@
 module.exports = function getShows() {
     return [{
+        id: 'black-miror',
         title: 'Black Mirror',
         synopsis: `Black Mirror is a British science fiction anthology television series 
         created by Charlie Brooker, with Brooker and Annabel Jones serving 
         as the programme showrunners. It examines modern society, particularly 
         with regard to the unanticipated consequences of new technologies.`,
-        id: 'black-miror'
     }, {
+        id: 'breaking-bad',
         title: 'Breaking Bad',
         synopsis: `Breaking Bad is an American neo-Western crime drama television series 
         created and produced by Vince Gilligan and is widely regarded 
@@ -18,9 +19,9 @@ module.exports = function getShows() {
         to secure his family's financial future before he dies, 
         while navigating the dangers of the criminal world. 
         The title comes from the Southern colloquialism "breaking bad", 
-        meaning to "raise hell" or turn toward crime.`,
-        id: 'breaking-bad'
+        meaning to "raise hell" or turn toward crime.`
     }, {
+        id: 'death-note',
         title: 'Death Note',
         synopsis: `Light Yagami (Tatsuya Fujiwara) is a normal, 
         undistinguished college student -- that is, until he discovers an odd notebook 
@@ -28,17 +29,17 @@ module.exports = function getShows() {
         If someone's name is written on it while the writer imagines that person's face, 
         he or she will die. Intoxicated with his new godlike power, 
         Light kills those he deems unworthy of life. But a mysterious detective known only 
-        as L (Ken'ichi Matsuyama) becomes determined to put a stop to his reign.`,
-        id: 'death-note'
+        as L (Ken'ichi Matsuyama) becomes determined to put a stop to his reign.`
     }, {
+        id: 'game-of-thrones',
         title: 'Game of Thrones',
         synopsis: `In the Game of Thrones, you either win or you die. 
         Nine noble families fight for control of the mythical land of Westeros. 
         Political and sexual intrigue is pervasive. 
         Robert Baratheon, King of Westeros, asks his old friend Eddard, 
-        Lord Stark, to serve as Hand of the King, or highest official.`,
-        id: 'game-of-thrones'
+        Lord Stark, to serve as Hand of the King, or highest official.`
     }, {
+        id: 'the-walking-dead',
         title: 'The Walking Dead',
         synopsis: `The Walking Dead is an American post-apocalyptic horror television series 
         developed by Frank Darabont for AMC that is based on the comic book series 
@@ -49,9 +50,9 @@ module.exports = function getShows() {
         and becomes the leader of a group he forms with other survivors. 
         Together they struggle to survive and adapt in a post-apocalyptic world filled 
         with walkers and opposing groups of survivors, 
-        who are often more dangerous than the walkers themselves.`,
-        id: 'the-walking-dead'
+        who are often more dangerous than the walkers themselves.`
     }, {
+        id: 'the-wire',
         title: 'The Wire',
         synopsis: `The Wire is an American crime drama television series created 
         and primarily written by author and former police reporter David Simon.
@@ -67,7 +68,6 @@ module.exports = function getShows() {
         It's about how institutions have an effect on individuals. Whether one is a cop, 
         a longshoreman, a drug dealer, a politician, a judge or a lawyer, 
         all are ultimately compromised and must contend with whatever institution to 
-        which they are committed."`,
-        id: 'the-wire'
+        which they are committed."`
     }];
 }
