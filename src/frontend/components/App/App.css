@@ -4,10 +4,9 @@
   min-height: 100%;
 } */
 
-
 #root,
 .App,
-.App > * {
+.App>* {
     height: 100%;
 }
 
