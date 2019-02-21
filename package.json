@@ -1,31 +1,38 @@
 {
-    "name": "kodflix",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.5.0",
-        "express": "^4.16.4",
-        "mongodb": "^3.1.10",
-        "nodemon": "^1.18.6",
-        "npm-run-all": "^4.1.3",
-        "react": "^16.6.1",
-        "react-dom": "^16.6.1",
-        "react-router-dom": "^4.3.1",
-        "react-scripts": "^2.1.3"
-    },
-    "scripts": {
-        "start": "npm run _start-backend",
-        "postinstall": "react-scripts build",
-        "start-dev": "npm-run-all -p _start-db _start-frontend _start-backend",
-        "_start-db": "mongod",
-        "_start-frontend": "react-scripts start",
-        "_start-backend": "nodemon src/backend/app.js",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
-    },
-    "devDependencies": {
-        "eslint-plugin-react": "^7.11.1"
-    },
-    "proxy": "http://localhost:3001"
+  "name": "kodflix",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "nodemon": "^1.18.6",
+    "npm-run-all": "^4.1.3",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.3"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production npm-run-all -s build _start-backend",
+    "postinstall": "react-scripts build",
+    "start-dev": "npm-run-all -p _start-db _start-frontend _start-backend",
+    "_start-db": "mongod",
+    "_start-frontend": "react-scripts start",
+    "_start-backend": "nodemon src/backend/app.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "proxy": "http://localhost:3001",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

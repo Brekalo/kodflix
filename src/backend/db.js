@@ -1,15 +1,11 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-// Set up server connection
-const db = {
-    host: 'localhost',
-    port: '27017',
-    name: 'kodflix',
-    user: 'kodflix',
-    pwd: 'kodflix'
-};
-// Connection url
-const url = `mongodb://${db.user}:${db.pwd}@${db.host}:${db.port}/${db.name}`;
+require('dotenv').config();
+
+const url = process.env.NODE_ENV === 'production' ?
+    process.env.DB_URL_PRD :
+    process.env.DB_URL_DEV;
+const dbName = url.substr(url.lastIndexOf('/') + 1);
 
 module.exports = { connect };
 
@@ -20,7 +16,7 @@ function connect() {
             assert.equal(null, err);
             console.log('Connected successfully to server');
             // Select the database by name
-            const dbo = client.db(db.name);
+            const dbo = client.db(dbName);
             resolve(dbo);
         });
     });
