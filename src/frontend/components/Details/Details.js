@@ -5,16 +5,16 @@ import './Details.css';
 import Loading from '../common/loading/Loading';
 
 class Details extends React.Component {
-    state = { show: {} };
+    constructor() {
+        super();
+        this.state = { show: {} };
+    }
 
     componentDidMount() {
-        fetch('/rest/shows')
+        let showId = this.props.match.params.showId;
+        fetch(`/rest/shows/${showId}`)
             .then(response => response.json())
-            .then(shows => {
-                let showId = this.props.match.params.showId;
-                let show = shows.find(show => show.id === showId);
-                this.setState({ show });
-            });
+            .then(show => this.setState({ show }));
     }
 
     render() {
@@ -30,27 +30,29 @@ class Details extends React.Component {
 }
 
 const DetailsContent = ({ show }) => {
-    <div className='details'>
-        <div className='details-movie'>
-            <h1>{show.title}</h1>
-            <div className='details-movie-content'>
-                <h3 className='details-movie-content-synopsis'>
-                    {show.synopsis}
-                </h3>
-                <div className='details-movie-content-cover'>
-                    <img
-                        src={require(`../common/images/${show.id}.jpg`)}
-                        alt={show.title} />
+    return (
+        <div className='details'>
+            <div className='details-movie'>
+                <h1>{show.title}</h1>
+                <div className='details-movie-content'>
+                    <h3 className='details-movie-content-synopsis'>
+                        {show.synopsis}
+                    </h3>
+                    <div className='details-movie-content-cover'>
+                        <img
+                            src={require(`../common/images/${show.id}.jpg`)}
+                            alt={show.title} />
+                    </div>
+                </div>
+                <div className='btn'>
+                    <hr class="style1"></hr>
+                    <button className='btn-BackHome'>
+                        <Link to={'/'} className='backHome'><h4>Home</h4></Link>
+                    </button>
                 </div>
             </div>
-            <div className='btn'>
-                <hr class="style1"></hr>
-                <button className='btn-BackHome'>
-                    <Link to={'/'} className='backHome'><h4>Home</h4></Link>
-                </button>
-            </div>
         </div>
-    </div>
+    )
 }
 
 export default Details; 

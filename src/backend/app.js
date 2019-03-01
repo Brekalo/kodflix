@@ -5,12 +5,12 @@ const port = process.env.PORT || 3001;
 const db = require('./db');
 
 db.connect().then(dbo => {
-
-    app.get('/rest/shows', (req, res) => {
-        dbo.collection('shows').find({}).toArray((err, results) => {
+    app.get('/rest/shows/:id', (req, res) => {
+        dbo.collection('shows').findOne({ id: req.params.id }, (err, doc) => {
+            // collection.findOne({_id: doc_id}, function(err, document) {};
             if (err) throw err;
-            //console.log(result);
-            res.send(results);
+            res.send(doc);
+            // console.log(result); -> console.log(document.name);
         });
     });
     // Serve any static files
